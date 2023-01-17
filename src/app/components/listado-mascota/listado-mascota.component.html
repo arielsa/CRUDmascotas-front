@@ -1,0 +1,52 @@
+<div class="tittle">
+    <h1>Listado de Mascotas </h1>
+</div>
+
+<div class="container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        
+        <!-- nombre Column -->
+        <ng-container matColumnDef="nombreh">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+
+        <!-- edad Column -->
+        <ng-container matColumnDef="edadh">
+            <th mat-header-cell *matHeaderCellDef> edad </th>
+            <td mat-cell *matCellDef="let element"> {{element.edad}} </td>
+        </ng-container>
+
+        <!-- raza Column -->
+        <ng-container matColumnDef="razah">
+            <th mat-header-cell *matHeaderCellDef> raza </th>
+            <td mat-cell *matCellDef="let element"> {{element.raza}} </td>
+        </ng-container>
+
+        <!-- raza Column -->
+        <ng-container matColumnDef="colorh">
+            <th mat-header-cell *matHeaderCellDef> color </th>
+            <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+        </ng-container>
+
+        <!-- raza Column -->
+        <ng-container matColumnDef="pesoh">
+            <th mat-header-cell *matHeaderCellDef> peso </th>
+            <td mat-cell *matCellDef="let element"> {{element.peso}} </td>
+        </ng-container>        
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements">
+    </mat-paginator>
+
+</div>
+
+  
+  
