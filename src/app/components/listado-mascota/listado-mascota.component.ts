@@ -1,13 +1,14 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import {  OnInit } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+
 import { MatTableDataSource } from '@angular/material/table';
 import { Mascota } from 'src/app/interfaces/mascota';
 
 
 
 const listMascotas: Mascota[] = [
-  { nombre: 'ringo', edad: 5, raza: 'boxer',color:'bayo',peso:15},
+  { nombre: 'ringo', edad: 8, raza: 'boxer',color:'bayo',peso:15},
   { nombre: 'pepe', edad: 5, raza: 'golden',color:'dorado',peso:20},
   { nombre: 'carl', edad: 4, raza: 'pitbul',color:'ambar',peso:30},
   { nombre: 'boby', edad: 3, raza: 'boxer',color:'blanco',peso:9},
@@ -30,6 +31,7 @@ const listMascotas: Mascota[] = [
 })
 
 export class ListadoMascotaComponent implements OnInit, AfterViewInit {
+
 
   displayedColumns: string[] = ['nombreh', 'edadh', 'razah','colorh','pesoh'];
   dataSource = new MatTableDataSource<Mascota>(listMascotas);

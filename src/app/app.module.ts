@@ -15,6 +15,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 
 
@@ -28,6 +29,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   ],
   imports: [
     
+    MatSortModule,
     MatPaginatorModule,
     MatTableModule,
     MatSliderModule,
