@@ -18,3 +18,29 @@ width: 15%;
     font-size: 14px;
     width: 100%;
   }
+  .delete {
+    cursor: pointer;
+    color: rgb(170, 9, 9);
+  }
+  .delete:hover{
+    color: red;
+  }
+
+  .edit {
+    cursor: pointer;
+    color: rgb(20, 42, 141);
+  }
+  .edit:hover{
+    color:blue;
+  }
+  .search {
+    cursor: pointer;
+    
+  }
+  .search:hover{
+    color:rgb(16, 237, 94);
+  }
+.btnAgregar{
+  font-size: 10px;
+  line-height: 20px;
+}

@@ -10,14 +10,8 @@ import { ListadoMascotaComponent } from './components/listado-mascota/listado-ma
 import { VerMascotaComponent } from './components/ver-mascota/ver-mascota.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//angular material
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatSliderModule} from '@angular/material/slider';
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatSortModule} from '@angular/material/sort';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+//modulos
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -29,16 +23,11 @@ import {MatInputModule} from '@angular/material/input';
     VerMascotaComponent
   ],
   imports: [
-    MatInputModule,
-    MatFormFieldModule,
-    MatSortModule,
-    MatPaginatorModule,
-    MatTableModule,
-    MatSliderModule,
-    MatSlideToggleModule,
+   
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
