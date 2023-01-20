@@ -13,11 +13,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
   declarations: [],
   imports: [
+    MatCardModule,
     MatButtonModule,
     MatTooltipModule,
     MatIconModule,
@@ -32,6 +34,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   exports:[
     
+    MatCardModule,
     MatButtonModule,
     MatTooltipModule,
     MatIconModule,

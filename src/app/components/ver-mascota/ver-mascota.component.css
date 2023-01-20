@@ -1,0 +1,9 @@
+.card{
+    margin-top: 3px;
+    text-align: center;
+}
+
+.btnVolver{
+    display: flex;
+    flex-direction: column;
+}
